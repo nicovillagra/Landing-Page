@@ -162,13 +162,25 @@ ul{
     align-items: center;
     border-radius: 5px;
 }
-.carrito2{
+#carrito2{
     height: 40px;
     width: 40px;
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
     float: right;
+    display: none;
+}
+#check {
+    display: none;
+}
+.checkbutton{
+    font-size: 30px;
+    color: black;
+    float: right;
+    margin-right: 100%;
+    line-height: 80px;
+    cursor: pointer;
     display: none;
 }
 @font-face {
@@ -181,17 +193,21 @@ ul{
     } 
 }
 @media (max-width: 690.98px) {
-    .carrito2{
+    .checkbutton{
         display: block;
         margin-right: 30px;
     }
     ul {
         position: fixed;
-        background-color: rgba(10, 10, 10, 0.281);
-        float: right;
-        margin-left: 100%;
+        display:flex;
+        background-color: rgba(10, 10, 10, 0.733);
+        left: 100%;
+        margin-top: 434px;
         text-align: center;
         transition: all .5s;
+        flex-direction: column;
+        width: 100%;
+        color: white;
     }
     nav ul li {
         display: block;
@@ -202,11 +218,23 @@ ul{
     }
     li a:hover, li a#active{
         background: none;
-        color: red;
+        color:white;
     }
-    .carrito2:checked ~ ul{
-        margin-left: 0%;
+    .aBarra{
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0%;
 
+    }
+    .separador{
+        display: none;
+    }
+    .carrito {
+        display: none;
+    }
+    .buscador {
+        display: none;
     }
     .imagen1 {
         width: 100%;
