@@ -188,11 +188,19 @@ ul{
     src: url(./Assets/Montserrat-VariableFont_wght.ttf);
 }
 .containerSeven{
-    height:28rem;
+    height:30rem;
     width:100%;
     background-color: white;
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+.imagenHero{
+    width:270px;
+}
+.imagenHero2{
+    width: 100px;
+
 }
 #person{
     font-size: 60px;
@@ -204,7 +212,7 @@ ul{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 3rem 0rem 3rem;
+    margin: 0 2rem 0rem 2rem;
 }
 span{
     font-family:fuente4;
@@ -212,10 +220,11 @@ span{
     text-align: center;
 }
 .containerNine{
-    height: 28rem;
+    height: 21rem;
     width: 100%;
     background-color: #0C1B46;
     display: flex;
+    margin-top: 1.5rem;
 }
 #contactIcon{
     font-size: 20px;
@@ -237,16 +246,53 @@ span{
     color: white;
     font-family:fuente4;
 }
+.contactText1{
+    margin-left: 1.5rem;
+    color: white;
+    font-family:fuente4;
+}
 .contact{
     display: flex;
 }
 .agencia1{
     display: flex;
-    margin-top: 10px;
+    margin: 30px;
+}
+.beneficios{
+    display: flex;
+}
+.beneficiosText{
+    font-size: 30px;
+    margin-bottom: 50px;
+    height: 40px;
+    width: 550px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    margin-top: 0.5rem;
+    text-align: center;
 }
 .agenciaCordoba{
     display: flex;
     flex-direction: column;
+}
+.agenciaPersonal{
+    margin-left: 10px;
+}
+footer{
+    height:100%;
+    width: 100%;
+    background-color:#051824;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+h6{
+    color: white;
+    font-family:fuente4;
+}
+.logoFooter{
+    width:150px;
 }
 /*Responsive*/
 
@@ -325,7 +371,7 @@ span{
         font-size: 16px;
     }
     .parrafo4 {
-        font-size:22px;
+        font-size:1rem;
     }
     .containerSix {
         width: 360px;
@@ -333,6 +379,35 @@ span{
     }
     .containerFive{
         height: 281px;
+    }
+    .beneficiosText{
+        width: 15rem;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .containerSeven{
+        height: 37rem;
+    }
+    .beneficios{
+        flex-direction: column;
+    }
+    .imagenHero{
+        width:200px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .contactText1{
+        font-size: 20px;
+    }
+    #contactIcon{
+        font-size: 10px;
+    }
+    .parrafo8{
+        font-size:10px;
+    }
+    .map-responsive{
+        display: none;
     }
 
 }
