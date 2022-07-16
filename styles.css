@@ -350,7 +350,7 @@ h6{
         height: 243px;
     }
     .containerFor {
-        width: 99%;
+        width: 100%;
         height: 401px;
         background-color: white;
         margin: auto;
@@ -379,6 +379,7 @@ h6{
     }
     .containerFive{
         height: 281px;
+        margin-top: 0%;
     }
     .beneficiosText{
         width: 15rem;
@@ -396,6 +397,13 @@ h6{
     }
     span{
         font-size: 10px;
+    }
+    .agencia1{
+        flex-direction: column;
+    }
+    .agenciaPersonal{
+        margin-top: 10px;
+        margin-left: 0%;
     }
     .contactText{
         font-size: 13px;
